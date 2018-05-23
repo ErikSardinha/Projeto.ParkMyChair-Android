@@ -53,7 +53,16 @@ public class DB implements Runnable {
         }
     }
 
-    public ResultSet select(String query){
+    public ResultSet execute(String query){
+        this.conecta();
+        ResultSet resultSet = null;
+        try {
+            resultSet = new ExecuteDB(this.conn, query).execute().get();
+        }catch (Exception e){
 
+        }
+
+        return resultSet;
     }
+
 }
