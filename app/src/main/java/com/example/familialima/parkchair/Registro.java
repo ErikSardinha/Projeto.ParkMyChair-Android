@@ -1,5 +1,6 @@
 package com.example.familialima.parkchair;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -11,11 +12,11 @@ public class Registro extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
     }
 
-    public void registrar(String nome, String email, String confE, String senha, String confS){
+    public void registrar(String nome, String mail, String confE, String pass, String confS){
         String nomeUsuario = nome;
-        String email = email;
+        String email = mail;
         String confEmail = confE;
-        String senha = senha;
+        String senha = pass;
         String confSenha = confS;
 
         if(email == confEmail){
@@ -30,4 +31,12 @@ public class Registro extends AppCompatActivity {
             //Pop-Up avisando que o email está invalido
         }
     };
+    public void clickCancelar(){
+        Intent login = new Intent(this, Login.class);
+        startActivity(login);
+    }
+    public void clickConfirmar(){
+        Intent confirm = new Intent(this, MapaLocais.class);
+        startActivity(confirm);
+    }
 }

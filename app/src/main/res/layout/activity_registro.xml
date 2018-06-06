@@ -5,6 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Registro">
+    tools:context=".Registro"
+    >
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="textPersonName"
+        android:layout_marginTop="5dp"
+        android:hint="Nome"
+        />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:id="@+id/edConfE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Confirme o Email"
+        />
+
+
+    <EditText
+        android:id="@+id/edSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Senha"/>
+    <EditText
+        android:id="@+id/edConfS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirme Senha"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edCancelar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickCancelar"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/edConfirmar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickConfirmar"
+            android:text="confirmar" />
+
+    </LinearLayout>
 
 </LinearLayout>
