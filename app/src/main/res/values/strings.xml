@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Telas</string>
-    <string name="usuario">Usuário</string>
-    <string name="senha">Senha</string>
-    <string name="btLogar">Entrar</string>
+    <string name="user">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="confpass">Confirmar Senha</string>
+    <string name="register">Registrar</string>
+    <string name="login">Entrar</string>
+    <string name="send">Enviar</string>
+    <string name="mail">Email</string>
+    <string name="confmail">Confirmar Email</string>
 </resources>
