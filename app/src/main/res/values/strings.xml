@@ -8,4 +8,17 @@
     <string name="send">Enviar</string>
     <string name="mail">Email</string>
     <string name="confmail">Confirmar Email</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="navigation_drawer_open">Abrir Menu</string>
+    <string name="navigation_drawer_close">Fechar Menu</string>
+    <string name="nav_header_title">Teste Padrão</string>
+    <string name="nav_header_subtitle">testador@teste.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configurações</string>
+    <string name="address">Endereço</string>
+    <string name="street">Rua</string>
+    <string name="neigh">Bairro</string>
+    <string name="zone">Zona</string>
+    <string name="cep">CEP</string>
+    <string name="local_name">Nome do Lugar</string>
 </resources>
