@@ -8,6 +8,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import testes.telas.dao.ClienteDao;
+import testes.telas.modelos.Cliente;
+
 public class RegisterActivity extends AppCompatActivity {
 
     @Override
@@ -36,7 +39,20 @@ public class RegisterActivity extends AppCompatActivity {
                 // Verificação de informações
                 if (email.equals(confE)){
                     if (senha.equals(confS)){
+                        //Iniciando objetos
+                        Cliente cliente = new Cliente();
+                        ClienteDao clienteDao = new ClienteDao(RegisterActivity.this);
+
+                        //Definindo atributos do cliente
+                        cliente.setUsername(nome);
+                        cliente.setMail(email);
+                        cliente.setPassword(senha);
+
+                        //Enviar para o banco
+                        clienteDao.saveClient(cliente);
                         alert("Sucesso! Confirme sua conta atráves do email de Verificação");
+
+                        //Começando tela do mapa
                         startActivity(map);
                         finish();
                     }else{

@@ -62,47 +62,43 @@
             android:layout_height="wrap_content"
             android:id="@+id/tBairro"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+        <RadioGroup
+            android:id="@+id/zonas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <CheckBox
+            <RadioButton
+                android:id="@+id/zonaSul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sul"
-                android:text="Sul"/>
-                //android:onClick"onCheckboxClicked"
+                android:text="Sul"
+                android:checked="true"/>
 
-
-            <CheckBox
+            <RadioButton
+                android:id="@+id/zonaNorte"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/norte"
                 android:text="Norte"/>
-                //android:onClick"onCheckboxClicked"
 
-            <CheckBox
+            <RadioButton
+                android:id="@+id/zonaLeste"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/leste"
-                android:text="Lest"/>
-                //android:onClick"onCheckboxClicked"
+                android:text="Leste"/>
 
-            <CheckBox
+            <RadioButton
+                android:id="@+id/zonaOeste"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/oeste"
                 android:text="Oeste"/>
-                //android:onClick"onCheckboxClicked"
-            <CheckBox
+
+            <RadioButton
+                android:id="@+id/zonaCentral"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/centro"
                 android:text="Centro"/>
-                //android:onClick="onCheckboxClicked"
 
-        </LinearLayout>
+        </RadioGroup>
 
         <Button
             android:id="@+id/btSend"
